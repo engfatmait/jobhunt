@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>dae001c9-1c93-44a1-8e5c-ee4d55ca2898</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>jobhunt</Name>
+    <RootNamespace>jobhunt</RootNamespace>
+    <InterpreterId>MSBuild|jobenv|$(MSBuildProjectFullPath)</InterpreterId>
+    <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
+    <SuppressPackageInstallationPrompt>True</SuppressPackageInstallationPrompt>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="jobhunt\models.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="runserver.py" />
+    <Compile Include="jobhunt\__init__.py" />
+    <Compile Include="jobhunt\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="jobhunt\" />
+    <Folder Include="jobhunt\static\" />
+    <Folder Include="jobhunt\static\content\" />
+    <Folder Include="jobhunt\static\content\css\" />
+    <Folder Include="jobhunt\static\content\img\" />
+    <Folder Include="jobhunt\static\content\scss\" />
+    <Folder Include="jobhunt\static\content\scss\bootstrap\" />
+    <Folder Include="jobhunt\static\content\scss\bootstrap\scss\" />
+    <Folder Include="jobhunt\static\content\scss\bootstrap\scss\forms\" />
+    <Folder Include="jobhunt\static\content\scss\bootstrap\scss\helpers\" />
+    <Folder Include="jobhunt\static\content\scss\bootstrap\scss\mixins\" />
+    <Folder Include="jobhunt\static\content\scss\bootstrap\scss\utilities\" />
+    <Folder Include="jobhunt\static\content\scss\bootstrap\scss\vendor\" />
+    <Folder Include="jobhunt\static\fonts\" />
+    <Folder Include="jobhunt\static\fonts\lib\" />
+    <Folder Include="jobhunt\static\fonts\lib\animate\" />
+    <Folder Include="jobhunt\static\fonts\lib\easing\" />
+    <Folder Include="jobhunt\static\fonts\lib\owlcarousel\" />
+    <Folder Include="jobhunt\static\fonts\lib\owlcarousel\assets\" />
+    <Folder Include="jobhunt\static\fonts\lib\waypoints\" />
+    <Folder Include="jobhunt\static\fonts\lib\wow\" />
+    <Folder Include="jobhunt\static\scripts\" />
+    <Folder Include="jobhunt\static\scripts\js\" />
+    <Folder Include="jobhunt\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="jobhunt\static\content\bootstrap.css" />
+    <Content Include="jobhunt\static\content\css\bootstrap.min.css" />
+    <Content Include="jobhunt\static\content\css\style.css" />
+    <Content Include="jobhunt\static\content\img\about-1.jpg" />
+    <Content Include="jobhunt\static\content\img\about-2.jpg" />
+    <Content Include="jobhunt\static\content\img\about-3.jpg" />
+    <Content Include="jobhunt\static\content\img\about-4.jpg" />
+    <Content Include="jobhunt\static\content\img\carousel-1.jpg" />
+    <Content Include="jobhunt\static\content\img\carousel-2.jpg" />
+    <Content Include="jobhunt\static\content\img\com-logo-1.jpg" />
+    <Content Include="jobhunt\static\content\img\com-logo-2.jpg" />
+    <Content Include="jobhunt\static\content\img\com-logo-3.jpg" />
+    <Content Include="jobhunt\static\content\img\com-logo-4.jpg" />
+    <Content Include="jobhunt\static\content\img\com-logo-5.jpg" />
+    <Content Include="jobhunt\static\content\img\testimonial-1.jpg" />
+    <Content Include="jobhunt\static\content\img\testimonial-2.jpg" />
+    <Content Include="jobhunt\static\content\img\testimonial-3.jpg" />
+    <Content Include="jobhunt\static\content\img\testimonial-4.jpg" />
+    <Content Include="jobhunt\static\content\scss\bootstrap.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\bootstrap-grid.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\bootstrap-reboot.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\bootstrap-utilities.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\bootstrap.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\forms\_floating-labels.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\forms\_form-check.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\forms\_form-control.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\forms\_form-range.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\forms\_form-select.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\forms\_form-text.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\forms\_input-group.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\forms\_labels.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\forms\_validation.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\helpers\_clearfix.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\helpers\_colored-links.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\helpers\_position.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\helpers\_ratio.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\helpers\_stretched-link.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\helpers\_text-truncation.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\helpers\_visually-hidden.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_alert.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_border-radius.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_box-shadow.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_breakpoints.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_buttons.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_caret.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_clearfix.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_color-scheme.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_container.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_deprecate.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_forms.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_gradients.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_grid.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_image.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_list-group.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_lists.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_pagination.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_reset-text.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_resize.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_table-variants.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_text-truncate.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_transition.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_utilities.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\mixins\_visually-hidden.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\utilities\_api.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\vendor\_rfs.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_accordion.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_alert.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_badge.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_breadcrumb.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_button-group.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_buttons.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_card.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_carousel.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_close.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_containers.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_dropdown.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_forms.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_functions.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_grid.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_helpers.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_images.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_list-group.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_mixins.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_modal.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_nav.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_navbar.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_offcanvas.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_pagination.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_popover.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_progress.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_reboot.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_root.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_spinners.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_tables.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_toasts.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_tooltip.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_transitions.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_type.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_utilities.scss" />
+    <Content Include="jobhunt\static\content\scss\bootstrap\scss\_variables.scss" />
+    <Content Include="jobhunt\static\content\site.css" />
+    <Content Include="jobhunt\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="jobhunt\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="jobhunt\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="jobhunt\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="jobhunt\static\fonts\lib\animate\animate.css" />
+    <Content Include="jobhunt\static\fonts\lib\animate\animate.min.css" />
+    <Content Include="jobhunt\static\fonts\lib\easing\easing.js" />
+    <Content Include="jobhunt\static\fonts\lib\easing\easing.min.js" />
+    <Content Include="jobhunt\static\fonts\lib\owlcarousel\assets\ajax-loader.gif" />
+    <Content Include="jobhunt\static\fonts\lib\owlcarousel\assets\owl.carousel.css" />
+    <Content Include="jobhunt\static\fonts\lib\owlcarousel\assets\owl.carousel.min.css" />
+    <Content Include="jobhunt\static\fonts\lib\owlcarousel\assets\owl.theme.default.css" />
+    <Content Include="jobhunt\static\fonts\lib\owlcarousel\assets\owl.theme.default.min.css" />
+    <Content Include="jobhunt\static\fonts\lib\owlcarousel\assets\owl.theme.green.css" />
+    <Content Include="jobhunt\static\fonts\lib\owlcarousel\assets\owl.theme.green.min.css" />
+    <Content Include="jobhunt\static\fonts\lib\owlcarousel\assets\owl.video.play.png" />
+    <Content Include="jobhunt\static\fonts\lib\owlcarousel\LICENSE" />
+    <Content Include="jobhunt\static\fonts\lib\owlcarousel\owl.carousel.js" />
+    <Content Include="jobhunt\static\fonts\lib\owlcarousel\owl.carousel.min.js" />
+    <Content Include="jobhunt\static\fonts\lib\waypoints\links.php" />
+    <Content Include="jobhunt\static\fonts\lib\waypoints\waypoints.min.js" />
+    <Content Include="jobhunt\static\fonts\lib\wow\wow.js" />
+    <Content Include="jobhunt\static\fonts\lib\wow\wow.min.js" />
+    <None Include="jobhunt\static\scripts\_references.js" />
+    <Content Include="jobhunt\static\scripts\bootstrap.js" />
+    <Content Include="jobhunt\static\scripts\bootstrap.min.js" />
+    <None Include="jobhunt\static\scripts\jquery.validate-vsdoc.js" />
+    <None Include="jobhunt\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="jobhunt\static\scripts\jquery-1.10.2.js" />
+    <Content Include="jobhunt\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="jobhunt\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="jobhunt\static\scripts\jquery.validate.js" />
+    <Content Include="jobhunt\static\scripts\jquery.validate.min.js" />
+    <Content Include="jobhunt\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="jobhunt\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="jobhunt\static\scripts\js\main.js" />
+    <Content Include="jobhunt\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="jobhunt\static\scripts\respond.js" />
+    <Content Include="jobhunt\static\scripts\respond.min.js" />
+    <Content Include="requirements.txt" />
+    <Content Include="jobhunt\templates\about.html" />
+    <Content Include="jobhunt\templates\contact.html" />
+    <Content Include="jobhunt\templates\index.html" />
+    <Content Include="jobhunt\templates\layout.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="jobenv\">
+      <Id>jobenv</Id>
+      <Version>0.0</Version>
+      <Description>jobenv (Python 3.12 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
